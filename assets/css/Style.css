@@ -1,0 +1,261 @@
+
+@import url(../css/fonts.css);
+
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /* theme colors */
+
+    --text-blue: #01497c;
+    --text-black: #000814;
+    --white: #ffffff;
+    --darkpur: #4a4e69;
+    --lightpur: #9a8c98;
+    --lightblue: #98c1d9; 
+
+    /* Gradient color */
+    --sky:linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+
+
+
+    /* theme font-family */
+
+    --Abel:'Abel',cursive;
+    --Oswald:'Oswald',cursive;
+    --Roboto:'Roboto',cursive;
+    --Sacramento:'Sacramento',cursive;
+    --Teko:'Teko',cursive;
+
+
+}
+
+
+
+/* ------- Global Classes ------- */
+
+a{
+    text-decoration: none;
+    color: var(--text-blue)
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Roboto);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Roboto);
+}
+
+h3{
+    font-family: var(--Teko);
+    font-size:1.3rem ;
+}
+
+button.btn{
+    border:none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family:var(--Roboto);
+    cursor: pointer;
+}
+
+span{font-family: var(--Abel);}
+
+.container{
+    margin: 0 5vw;
+}
+/* ----x--- Global Classes ----x--- */
+
+
+/* ---------- navbar --------- */
+
+.nav{
+    background-color: white;
+    padding: 0.2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family:var(--Abel);
+    font-size: 1.1rem 
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--lightblue);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.nav .nav-brand a{
+
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    font-family:var(--Oswald);
+    font-size: 1.6rem;
+}
+.nav .social{
+    padding: 1.4rem 0
+}
+.nav .social{
+    padding: 0.2rem
+
+}
+
+.nav .social i:hover{
+    color: #feeafa;
+}
+/* ----x------ navbar -----x---- */
+
+/* ----------- Main Content --------- */
+
+/* ---------- Site Title ------------ */
+main .site-title{
+    background:url('../css/images\ 4.jpeg');
+    background-size:cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color:var(--white);
+}
+
+
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--lightblue);
+}
+
+main .site-title .btm:hover {
+    background:transparent;
+    border: 1px solid var(--white);
+    color:var(--white);
+}
+
+/* -----x----- Site Title -------x----- */
+
+/*-------------- Blog Carousel ----------------*/
+
+main .blog{
+    background: url('../css/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+
+
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    margin: 2rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--lightblue);
+    margin: .5rem;
+}
+
+main .blog-capture span{
+    display: block;
+}
+
+
+
+/*------x-------- Blog Carousel -----------x-----*/
+
+
+
+
+
+/* -----x------ Main Content -----x---- */
+
+
+
+/* Viewport less than or equal to 750px */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+.nav .toggle-collapse{
+    display: initial;
+}
+
+}
+
+
+/* x  Viewport less than or equal to 750px  x  */

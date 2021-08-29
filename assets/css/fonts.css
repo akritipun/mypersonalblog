@@ -1,0 +1,29 @@
+
+/* font-family:Abel */
+@font-face {
+    font-family: Abel;
+    src: url('../css/js/Fonts/Abel/Abel-Regular.ttf');
+}
+
+/* font-family:Oswald */
+@font-face {
+    font-family: Oswald;
+    src: url('../css/js/Fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+/* font-family: Roboto */
+@font-face {
+    font-family: Roboto;
+    src: url('../css/js/Fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+
+/* font-family:Sacramento */
+@font-face {
+    font-family: Sacramento;
+    src: url('../css/js/Fonts/Sacramento/Sacramento-Regular.ttf');
+}
+/* font-family:Teko */
+@font-face {
+    font-family: Teko;
+    src: url('../css/js/Fonts/Teko/Teko-Medium.ttf');
+}
